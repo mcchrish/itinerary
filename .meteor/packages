@@ -5,10 +5,10 @@
 
 standard-app-packages
 insecure
-iron-router
+iron:router@1.0.0
 coffeescript
-collection-hooks
-spin
-moment
+matb33:collection-hooks
+sacha:spin
+momentjs:moment
 accounts-password
 accounts-base

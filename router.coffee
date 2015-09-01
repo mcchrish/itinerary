@@ -15,13 +15,14 @@ Router.map ->
     ]
     onBeforeAction: ->
       if Meteor.user()
-        return
+        @render();
       else if Meteor.loggingIn()
         @render('loading')
       else
         Router.go('landingPage')
+        @next()
 
-  @route 'landingPage', path: '/'
+  @route 'landingPage', path: '/home'
 
   @route 'signUp',
     path: 'sign-up'
